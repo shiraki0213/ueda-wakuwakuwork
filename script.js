@@ -13,4 +13,7 @@ document.getElementById('generate-btn').addEventListener('click', function() {
     ];
     const randomIndex = Math.floor(Math.random() * messages.length);
     document.getElementById('message').textContent = messages[randomIndex];
+     const colors = ['#f0f8ff', '#ffebcd', '#f5f5dc', '#ffe4e1', '#e6e6fa', '#f0fff0', '#fafad2', '#d3d3d3'];
+    const randomColorIndex = Math.floor(Math.random() * colors.length);
+    document.body.style.backgroundColor = colors[randomColorIndex];
 });
